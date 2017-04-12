@@ -1,1 +1,79 @@
 /*Use this file to add your styles -there are some cool img in the images path*/
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background: url("../images/board.jpg");
+}
+
+#game-options {
+  background-color: white;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+#game{
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  display: none;
+}
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+#main {
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  border-radius: 6px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+#operations {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+#question {
+  display: flex;
+  justify-content: center;
+}
+
+
+#start {
+  width: 30%;
+  margin: 0 35%;
+}
+.op {
+  margin: 60px;
+  width: 120px;
+  height: 120px;
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.op img {
+  width: 40%;
+}
+
+
+
+
+input {
+  margin-left: 85px;
+}

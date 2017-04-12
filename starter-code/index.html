@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.3/bootstrap-slider.js"></script>
+  <script src="bootstrap-slider.js"></script>
+  <script type="text/javascript" src="./js/application.js"></script>
+  <script type="text/javascript" src="./js/tenSecondsMath.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
     <!--  Added Libraries -->
-
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/bootstrap-slider.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/custom.css">
+
   </head>
   <body>
+  <div id="main">
+    <span><h2>Ten Seconds Math Game</h2></span>
+    <div id="game-options">
+      <div>
+        <span><h2>Game Options</h2></span>
+      </div>
+
+      <div>
+      <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="5" data-slider-max="25" data-slider-step="1" data-slider-value="14"/>
+      </div>
+      <div id="operations">
+              <div class="op"><div id="add"class="checkbox">
+        <label><input type="checkbox" value=""></label>
+      </div><img src="images/add.jpg"></div>
+              <div class="op" ><div id="sub" class="checkbox">
+        <label><input type="checkbox" value=""></label>
+      </div><img src="images/substract.jpg"></div>
+              <div class="op" ><div id="multi" class="checkbox">
+        <label><input type="checkbox" value=""></label>
+      </div><img src="images/multiply.jpg"></div>
+              <div class="op" ><div id="divide" class="checkbox">
+        <label><input type="checkbox" value=""></label>
+      </div><img src="images/divide.jpg"></div>
+            </div>
+      <button id="start" class="btn btn-primary ">Start game</button>
+    </div>
+    <div id="game">
+      <span id="time-left"><h2>Time left</h2></span>
+      <div id="question"><h3>3+4?</h3><input id="answer" type="text"/></div>
 
 
+    </div>
+  </div>
     <!-- Custom JavaScript -->
 
   </body>

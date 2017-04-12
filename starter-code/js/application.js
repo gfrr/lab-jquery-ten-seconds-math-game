@@ -3,6 +3,18 @@
 //Initialize ion library
 
 
-window.onload = function(){
+$(document).ready(function(){
+  $('#ex1').slider({
+	formatter: function(value) {
+		return 'Current value: ' + value;
+	}
+});
+showGame();
+});
 
-};
+function showGame(){
+  $("#start").click(function(){
+    $("#game").toggle();
+    $("#game-options").toggle();
+  });
+}
