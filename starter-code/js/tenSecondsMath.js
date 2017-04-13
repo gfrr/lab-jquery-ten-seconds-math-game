@@ -74,7 +74,7 @@ TenSecondsMathGame.prototype.generateQuestion = function() {
       answer = this.add();
       break;
 
-      case("subtract"):
+      case("substract"):
       question = this.x +" - "+ this.y + "?";
       answer = this.subtract();
       break;
